@@ -11,7 +11,10 @@ export default function Navbar(){
               <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about">關於</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/album">相簿</Link>
             </li>
           </ul>
          

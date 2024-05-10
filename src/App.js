@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-
+import AlbumLayout from "./pages/AlbumLayout";
+import AlbumIndex from "./pages/AlbumIndex";
 // 0. 於index.js加入BrowserRouter 只要做一次
 //  加入前端路由
 // 1. 準備元件
@@ -19,6 +20,9 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
+            <Route path='/album' element={<AlbumLayout/>}>
+              <Route index element={<AlbumIndex/>}></Route>
+            </Route>
           </Routes>
         </div>
       </header>

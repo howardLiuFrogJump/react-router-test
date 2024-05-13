@@ -7,6 +7,7 @@ import AlbumLayout from "./pages/AlbumLayout";
 import AlbumIndex from "./pages/AlbumIndex";
 import AlbumPhoto from "./pages/AlbumPhoto";
 import AlbumSearch from "./pages/AlbumSearch";
+import NotFound from "./pages/NotFound";
 // 0. 於index.js加入BrowserRouter 只要做一次
 //  加入前端路由
 // 1. 準備元件
@@ -27,6 +28,7 @@ function App() {
               <Route path='search' element={<AlbumSearch/>}></Route>
               <Route path=':id' element={<AlbumPhoto/>} > </Route>
             </Route>
+            <Route path="*" element={<NotFound/>}></Route>
           </Routes>
         </div>
       </header>

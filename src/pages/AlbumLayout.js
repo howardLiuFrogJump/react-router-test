@@ -21,6 +21,9 @@ export default function AlbumLayout(){
     <div className="row">
       <div className="col-4">
         左側選單
+        <p>
+          <Link to="search">搜尋頁面</Link>
+        </p>
         {list.map((item) => {
           return(
             <li key={item.id}>

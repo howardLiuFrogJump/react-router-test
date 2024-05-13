@@ -6,7 +6,6 @@ const api = "https://api.unsplash.com/photos";
 const accessId = process.env.REACT_APP_UNSPLASH_ACCESS;
 
 export default function AlbumPhoto(){
-  console.log(useParams());
   const { id } = useParams();
   const [photo , setPhoto] = useState({});
   const navigate = useNavigate();
@@ -14,7 +13,6 @@ export default function AlbumPhoto(){
   useEffect(()  => {
     (async()=>{
       const response = await axios.get(`${api}/${id}?client_id=${accessId}`);
-      console.log('AlbumPhoto' , response);
       await setPhoto(response.data);
     })()
   },[id])

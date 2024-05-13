@@ -1,13 +1,14 @@
 import { Routes , Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+import {Home , About , NotFound} from "./pages"; //index可省略
 import AlbumLayout from "./pages/AlbumLayout";
 import AlbumIndex from "./pages/AlbumIndex";
 import AlbumPhoto from "./pages/AlbumPhoto";
 import AlbumSearch from "./pages/AlbumSearch";
-import NotFound from "./pages/NotFound";
+// import NotFound from "./pages/NotFound";
 // 0. 於index.js加入BrowserRouter 只要做一次
 //  加入前端路由
 // 1. 準備元件

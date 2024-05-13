@@ -13,7 +13,7 @@ export default function AlbumLayout(){
     (async()=>{
       const response = await axios.get(`${api}?client_id=${accessId}&query=animal`);
       const { results } = response.data;  
-       console.log(results);
+      //  console.log(results);
       setList(results);
     })()
   },[])
